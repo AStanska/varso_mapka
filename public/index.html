@@ -339,7 +339,7 @@
 </head>
 <body>
 <header>
-  <h1>Varsonalia 2025</h1>
+  <h1>Varsonalia 2026</h1>
   <p>Gra Terenowa</p>
 </header>
 
@@ -348,12 +348,12 @@
   <div id="team-selection-page">
     <h2>Wybierz swoją drużynę:</h2>
     <div class="team-selection">
-      <button class="team-btn" data-team="1">Drużyna Czerwona</button>
-      <button class="team-btn" data-team="2">Drużyna Niebieska</button>
-      <button class="team-btn" data-team="3">Drużyna Zielona</button>
-      <button class="team-btn" data-team="4">Drużyna Żółta</button>
-      <button class="team-btn" data-team="5">Drużyna Fioletowa</button>
-      <button class="team-btn" data-team="6">Drużyna Pomarańczowa</button>
+      <button class="team-btn" data-team="1">lactobacillus</button>
+      <button class="team-btn" data-team="2">67 BRUH</button>
+      <button class="team-btn" data-team="3">Technicznie najlepsi</button>
+      <button class="team-btn" data-team="4">Young Boys</button>
+      <button class="team-btn" data-team="5">Wielki Jahu</button>
+      <button class="team-btn" data-team="6">Drużyna nowa</button>
     </div>
 
     <div class="admin-section">
@@ -458,61 +458,61 @@
 </div>
 
 <footer>
-  <p>Varsonalia 2025 &copy; Politechnika Warszawska</p>
+  <p>Varsonalia 2026 &copy; Politechnika Warszawska</p>
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
 <script>
   // Dane gry
-  const ADMIN_PASSWORD = "varsonalia2025"; // Hasło prowadzącego
+  const ADMIN_PASSWORD = "varsonalia2026"; // Hasło prowadzącego
 
   // Hasła dla drużyn (tymczasowe)
   const TEAM_PASSWORDS = {
-    1: "red",  // Drużyna Czerwona
-    2: "blue", // Drużyna Niebieska
-    3: "green",   // Drużyna Zielona
-    4: "yellow",     // Drużyna Żółta
-    5: "purple", // Drużyna Fioletowa
-    6: "orange" // Drużyna Pomarańczowa
+    1: "sull",  // lactobacillus
+    2: "hurb", // 67 BRUH
+    3: "ispe",   // Technicznie najlepsi
+    4: "syob",     // Young Boys
+    5: "uhaj", // Wielki Jahu
+    6: "tak" // Drużyna
   };
 
   // Stacje (lokalizacje na Polu Mokotowskim)
   const stations = [
-    { id: 1, name: "Stacja PW", lat: 52.214484, lng: 21.013137, points: 0 },
-    { id: 2, name: "Escape room", lat: 52.215128, lng: 21.014872, points: 0 },
-    { id: 3, name: "Strzelaj z WAT'em", lat: 52.214367, lng: 21.011802, points: 0 },
+    { id: 1, name: "Synchroniczne pogo", lat: 52.216214, lng: 21.009263, points: 0 },
+    { id: 2, name: "Nie pękaj", lat: 52.215128, lng: 21.014872, points: 0 },
+    { id: 3, name: "Postaw na milion", lat: 52.214531, lng: 21.011708, points: 0 },
     { id: 4, name: "Puppy joga", lat: 52.214607, lng: 21.009114, points: 0 },
-    { id: 5, name: "Kalambury na hamakach", lat: 52.215849, lng: 21.009410, points: 0 },
-    { id: 6, name: "Jaka to melodia", lat: 52.213746, lng: 21.009683, points: 0 }
+    { id: 5, name: "Delfin", lat: 52.215849, lng: 21.009410, points: 0 },
+    { id: 6, name: "Jaka to melodia", lat: 52.214250, lng: 21.013174, points: 0 }
   ];
 
   // Zadania bingo
   
   const bingoTasks = [
     "Zrób selfie z osobą w koszulce Varsonaliów",
-    "Wymyśl okrzyk swojej drużyny",
-    "test",
-    "Narysuj maskotkę Varsonaliów",
-    "Ułóż akronim ze słowa JUWENALIA",
-    "Zdjęcie jak śpiewasz piosenki ulubionego artysty z tegorocznych Varsonaliów",
+    "Zdjęcie najdłuższej liny ze sznurówek",
+    "zdjęcie najdziwniejszej konstrukcji z kamieni i patyków",
+    "Zdjęcie całej drużyny udającej jazdę na niewidzialnym rowerze.",
+    "Zdjęcie jak ktoś z waszej drużyny pije z leja",
+    "Zdjęcie pióra",
     "Zdjęcie kogoś zakamuflowanego",
-    "Wymień się z kimś ubraniami (każda osoba z drużyny)",
-    "Zaproś 5 przypadkowych osób na Varsonalia",
+    "Zdjęcie jak do reklamy Varsonaliów",
+    "Znajdźcie czerwony kwiat",
     "Zrób zdjęcie całej drużyny w podskoku",
-    "Wymyśl hasło reklamujące Varsonalia",
-    "Zdjęcie ze zwierzęciem",
+    "Zdjęcie flagi",
+    "Zdjęcie z psami",
     "ZASKOCZ NAS KREATYWNOŚCIĄ!",
     "Znajdź kogoś ubranego na różowo",
-    "Zrób zdjęcie członka drużyny przebranego lub imitującego Mroza lub Otsochodzi",
-    "Wymyśl idealny napój na Varsonalia",
-    "Zdobądź (nie kradnij!) przedmiot od organizatorów",
+    "Zrób zdjęcie członka drużyny, który jest wysoko",
+    "Zdjęcie olbrzyma",
+    "odwzoruj scene z filmu",
     "Zrób zdjęcie z jak największą liczbą ludzi",
     "Odwiedź wydział IChiP",
     "Zrób ludzką piramidę (min. 3 osoby)",
-    "Zrób zdjęcie kogoś w bluzie wydziału Politechniki",
-    "Stwórzcie najdłuższy łańcuch z ubrań",
-    "Wymyśl mema o Varsonaliach",
-    "Zaskocz lub przestrasz kogoś z innej drużyny",
+    "Zrób zdjęcie kogoś w kapeluszu",
+    "zdjęcie jak oświadczacie się komuś nieznajomemu",
+    "Ułużcie z czegoś napis Varsonalia",
+    "Zdjęcie innej drużyny robiącej zadanie",
     "Znajdź i sfotografuj coś w kształcie serca"
   ];
 
@@ -547,12 +547,12 @@
 
   // Zmodyfikuj inicjalizację teamData, aby używała nowej funkcji trasy
   let teamData = {
-    1: { name: "Drużyna Czerwona", color: "#e74c3c", completedStations: {}, bingoMarked: {}, bingoPhotos: {}, totalPoints: 0 },
-    2: { name: "Drużyna Niebieska", color: "#3498db", completedStations: {}, bingoMarked: {}, bingoPhotos: {}, totalPoints: 0 },
-    3: { name: "Drużyna Zielona", color: "#2ecc71", completedStations: {}, bingoMarked: {}, bingoPhotos: {}, totalPoints: 0 },
-    4: { name: "Drużyna Żółta", color: "#f1c40f", completedStations: {}, bingoMarked: {}, bingoPhotos: {}, totalPoints: 0 },
-    5: { name: "Drużyna Fioletowa", color: "#9b59b6", completedStations: {}, bingoMarked: {}, bingoPhotos: {}, totalPoints: 0 },
-    6: { name: "Drużyna Pomarańczowa", color: "#e67e22", completedStations: {}, bingoMarked: {}, bingoPhotos: {}, totalPoints: 0 }
+    1: { name: "lactobacillus", color: "#e74c3c", completedStations: {}, bingoMarked: {}, bingoPhotos: {}, totalPoints: 0 },
+    2: { name: "67 BRUH", color: "#3498db", completedStations: {}, bingoMarked: {}, bingoPhotos: {}, totalPoints: 0 },
+    3: { name: "Technicznie najlepsi", color: "#2ecc71", completedStations: {}, bingoMarked: {}, bingoPhotos: {}, totalPoints: 0 },
+    4: { name: "Young Boys", color: "#f1c40f", completedStations: {}, bingoMarked: {}, bingoPhotos: {}, totalPoints: 0 },
+    5: { name: "Wielki Jahu", color: "#9b59b6", completedStations: {}, bingoMarked: {}, bingoPhotos: {}, totalPoints: 0 },
+    6: { name: "Drużyna nowa", color: "#e67e22", completedStations: {}, bingoMarked: {}, bingoPhotos: {}, totalPoints: 0 }
   };
 
   // Wygeneruj trasy i przypisz je do drużyn
@@ -625,12 +625,12 @@
     const modal = document.getElementById('team-password-modal');
     const teamPasswordTitle = document.getElementById('team-password-title');
     const teamName = {
-      1: "Czerwonej",
-      2: "Niebieskiej", 
-      3: "Zielonej",
-      4: "Żółtej",
-      5: "Fioletowej",
-      6: "Pomarańczowej"
+      1: "lactobacillus",
+      2: "67 BRUH", 
+      3: "Technicznie najlepsi",
+      4: "Young Boys",
+      5: "Wielki Jahu",
+      6: "nowej"
     }[teamId];
 
     teamPasswordTitle.textContent = `Hasło drużyny ${teamName}`;
@@ -1073,12 +1073,12 @@
 
   // Dodaj stałe hasła stacji
   const STATION_PASSWORDS = {
-    1: "stacjaPW",
-    2: "escaperoom",
-    3: "strzelaj",
+    1: "pogo",
+    2: "balon",
+    3: "milion",
     4: "joga",
-    5: "hamaki",
-    6: "juwe"
+    5: "delfin",
+    6: "muzyka"
   };
 
   // Zmodyfikowana funkcja walidacji formularza dodawania punktów
@@ -1316,12 +1316,12 @@ function saveGameState() {
 
               // Reset wszystkich danych drużyn do wartości domyślnych
               teamData = {
-                1: { name: "Drużyna Czerwona", color: "#e74c3c", completedStations: {}, bingoMarked: {}, bingoPhotos: {}, totalPoints: 0, stationOrder: teamRoutes[1] },
-                2: { name: "Drużyna Niebieska", color: "#3498db", completedStations: {}, bingoMarked: {}, bingoPhotos: {}, totalPoints: 0, stationOrder: teamRoutes[2] },
-                3: { name: "Drużyna Zielona", color: "#2ecc71", completedStations: {}, bingoMarked: {}, bingoPhotos: {}, totalPoints: 0, stationOrder: teamRoutes[3] },
-                4: { name: "Drużyna Żółta", color: "#f1c40f", completedStations: {}, bingoMarked: {}, bingoPhotos: {}, totalPoints: 0, stationOrder: teamRoutes[4] },
-                5: { name: "Drużyna Fioletowa", color: "#9b59b6", completedStations: {}, bingoMarked: {}, bingoPhotos: {}, totalPoints: 0, stationOrder: teamRoutes[5] },
-                6: { name: "Drużyna Pomarańczowa", color: "#e67e22", completedStations: {}, bingoMarked: {}, bingoPhotos: {}, totalPoints: 0, stationOrder: teamRoutes[6] }
+                1: { name: "lactobacillus", color: "#e74c3c", completedStations: {}, bingoMarked: {}, bingoPhotos: {}, totalPoints: 0, stationOrder: teamRoutes[1] },
+                2: { name: "67 BRUH", color: "#3498db", completedStations: {}, bingoMarked: {}, bingoPhotos: {}, totalPoints: 0, stationOrder: teamRoutes[2] },
+                3: { name: "Technicznie najlepsi", color: "#2ecc71", completedStations: {}, bingoMarked: {}, bingoPhotos: {}, totalPoints: 0, stationOrder: teamRoutes[3] },
+                4: { name: "Young Boys", color: "#f1c40f", completedStations: {}, bingoMarked: {}, bingoPhotos: {}, totalPoints: 0, stationOrder: teamRoutes[4] },
+                5: { name: "Wielki Jahu", color: "#9b59b6", completedStations: {}, bingoMarked: {}, bingoPhotos: {}, totalPoints: 0, stationOrder: teamRoutes[5] },
+                6: { name: "Drużyna nowa", color: "#e67e22", completedStations: {}, bingoMarked: {}, bingoPhotos: {}, totalPoints: 0, stationOrder: teamRoutes[6] }
               };
 
               // Resetuj mapę
